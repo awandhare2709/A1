@@ -1,0 +1,30 @@
+<p>student-list works!</p>
+
+<h2>Student Details</h2>
+roll no:{{stu1.rollno}}<br>
+name:{{stu1.name}}<br>
+addr:{{stu1.addr}}<br><br>
+
+roll no:{{stu2.rollno}}<br>
+name:{{stu2.name}}<br>
+addr:{{stu2.addr}}<br><br>
+
+<h1>Student List:</h1>
+<table border="1" align="center">
+    <tr>
+        <th>Rollno</th>
+        <th>Name</th>
+        <th>Address</th>
+    </tr>
+    <tr *ngFor="let e of stulist">
+   
+        <td>{{e.rollno}}</td>
+        <td>{{e.name}}</td>
+        <td>{{e.addr}}</td>
+    </tr>
+</table>
+
+<h1>NUMBER ARRAY:</h1>
+<div *ngFor="let a of n1">   
+{{a}}
+</div>

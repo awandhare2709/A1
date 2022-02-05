@@ -1,0 +1,19 @@
+<h1 align="center">emp-list works!</h1>
+<table border="3" align="center">
+    <tr>
+    <th>Employee Id</th>
+    <th>Name</th>
+    <th>Areaname</th>
+    <th>Cityname</th>
+    <th>Mobile No</th>
+    </tr>
+
+<tr *ngFor="let e of elist">
+<td>{{e.empId}}</td>
+<td>{{e.empName}}</td>
+<td>{{e.empAddr.areaname}}</td>
+<td>{{e.empAddr.cityname}}</td>
+<td>{{e.empMobNo}}</td>
+</tr>
+
+</table>
